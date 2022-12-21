@@ -439,6 +439,11 @@ hr {
         margin: 0;
     }
 
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
@@ -446,6 +451,9 @@ hr {
     }
 
     .hero {
+        justify-self: center;
+        align-self: center;
+        width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -503,6 +511,17 @@ hr {
     .about {
         display: none;
     }
+
+    .mainForm {
+        position: relative;
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
     .aboutPC {
         display: flex;
@@ -510,6 +529,9 @@ hr {
         width: 50vw;
         background: linear-gradient(128.31deg, #1169D1 0%, #0B3363 100%);
         position: relative;
+        justify-self: flex-start;
+        align-self: flex-start;
+        height: 100vh;
     }
 
     .aboutImg {
@@ -517,8 +539,82 @@ hr {
         height: auto;
     }
     
+    .formPersonalData {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        margin: auto auto;
+        align-items: center;
+        padding: 1.6rem;
+        width: 40vw;
+    }
+    
+    .formDivider {
+        width: 100vw;
+    }
+    
+    .form {
+        margin: 1.6rem;
+        padding: 1.6rem;
+        width: 26.5vw;
+    }
+    
+    .formSubmit {
+        width: 26.5vw;
+        padding: 1.6rem;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        margin-top: 1.6rem;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .formSubmit label {
+        font-size: 1.6em;
+        text-align: left;
+        color: #000000;
+        margin-left: 1em;
+        width: 100%;
+    }
+    
+    .submitButton {
+        width: 100%;
+    }
+    
+    .legalDataForm {
+        grid-area: b;
+        display: inline-block; 
+        height: 2em;
+        width: 2em;
+        border-radius: 8px;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .dataLabel {
+        grid-area: c;
+    }
+    
+    .callLabel {
+        grid-area: f;
+    }
+    
+    .legalCallForm {
+        grid-area: d;
+        display: inline-block; 
+        height: 2em;
+        width: 2em;
+        border-radius: 8px;
+        justify-self: center;
+        align-self: center;
+    }
+    
     footer {
-        padding: 1.5vw 0vw;
+        padding: 1.6rem 0vw;
         margin-top: 1em;
         padding-bottom: 0vw;
     }
@@ -529,6 +625,24 @@ hr {
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
+    }
+
+    .footerInfoBtn {
+        width: 40vw;
+        left: 0%;
+        transform: translateX(-0%);
+        margin: 1.6rem;
+    }
+    
+    .footerInfoBtn:hover {
+        background-color: #3b495a;
+        color: #FFFFFF;
+    }
+    
+    .footerInfoBtn a {
+        text-decoration: none;
+        color: #C1D4EB;
+        font-size: 1.6em;
     }
 
     .footerInfo {
