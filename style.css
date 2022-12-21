@@ -1,0 +1,680 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #C1D4EB;
+
+    font-size: 10px;
+    line-height: 1.6;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3em;
+    color: #323E4D;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.4em;
+
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #323E4D;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+p {
+    font-size: 1.6em;
+    margin: 0;
+}       
+
+
+    
+
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    padding: 0% 5vw;
+    position: relative;
+}
+
+.background {
+    display: inline-block;
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.smartIntercom {
+    width: 100vw;
+    position: absolute;
+    width: 150px;
+    top: 41%;
+    transform: translateY(-41%);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    object-fit: cover;
+    border: 0.5em solid #FFFFFF;
+    filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.5));
+    z-index: 111;
+}
+
+.textHero {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.arrow {
+    height: 4em;
+}
+
+.arrowPC {
+    display: none;
+}
+
+.about {
+    background: linear-gradient(128.31deg, #1169D1 0%, #0B3363 100%);
+    position: relative;
+}
+
+.aboutPC {
+    display: none;
+}
+
+.aboutImg {
+    display: block;
+    height: 25vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.aboutText {
+    height: 40vh;
+    margin: auto 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutText p {
+    margin-top: 1em;
+}
+
+.mainForm {
+    position: relative;
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+}
+
+.formPersonalData {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin: 1.6rem;
+    align-items: center;
+    padding: 1.6rem;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.formPersonalData h2 {
+    color: #323E4D;
+    margin: 0rem;
+}
+
+.inputForm {
+    width: 93%;
+    background-color: #FFFFFF;
+    color: #001B3F;
+    height: 4em;
+    border-radius: 4px;
+    border-style: solid;
+    font-size: 1.6em;
+    padding-left: 1em
+}
+
+.formDivider {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #323E4D;
+}
+
+.interviewImg {
+    display: block;
+    height: 25vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.interviewText {
+    margin: 1.6rem 1rem;
+}
+
+.form {
+    display: grid;
+    /* width: 100%; */
+    grid-template-areas: 
+            "a a a"
+            "b c d"
+            "b f g";
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 4rem 6rem 6rem;
+    text-align: center;
+    color: #000000;
+    align-items: center;
+    justify-items: center;
+    margin:  0rem 1.6rem 1.6rem 1.6rem;
+    padding: 1.6rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.form label{
+    font-size: 2em;
+}
+
+.form p {
+    grid-area: a;
+}
+
+.formBoxImg {
+    grid-area: b;
+    display: block;
+    height: 10rem;
+    justify-self: start;
+}
+
+.formBorderYes {
+    width: auto;
+    display: block;
+    height: 70%;
+    width: 100%;
+    border: 1px solid #C1D4EB;
+    border-radius: 8px;
+    grid-row-start: b;
+    grid-column-start: c;
+    grid-row-end: c;
+    grid-column-end: d; 
+}
+
+.formBorderNo {
+    width: auto;
+    display: block;
+    height: 70%;
+    width: 100%;
+    border: 1px solid #C1D4EB;
+    border-radius: 8px;
+    grid-row-start: f;
+    grid-column-start: f;
+    grid-row-end: f;
+    grid-column-end: g; 
+}
+
+.choiceFormYes {
+    grid-area: d;
+    z-index: 20;
+}
+
+.yesForm {
+    grid-area: c;
+    z-index: 20;
+}
+
+.noForm {
+    grid-area: f;
+    z-index: 20;
+}
+
+.choiceFormNo {
+    grid-area: g;
+    z-index: 20;
+}
+
+.formSubmit {
+    display: grid;
+    grid-template-areas: 
+            "a a"
+            "b c"
+            "d f";
+    grid-template-columns: 10% 90%;
+    grid-template-rows: auto 3rem 3rem;
+    margin: 1.6rem;
+    margin-top: 0rem;
+    align-items: center;
+}
+
+.formSubmit label {
+    font-size: 1.6em;
+    text-align: left;
+    color: #000000;
+    margin-left: 1em;
+}
+
+.submitButton {
+    grid-area: a;
+    font-size: 1.8em;
+    height: 4rem;
+    background-color: #105FBB;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border-style: none;
+    margin-bottom: 1em;
+}
+
+.legalDataForm {
+    grid-area: b;
+    display: inline-block; 
+    height: 2em;
+    width: 2em;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+}
+
+.dataLabel {
+    grid-area: c;
+}
+
+.callLabel {
+    grid-area: f;
+}
+
+.legalCallForm {
+    grid-area: d;
+    display: inline-block; 
+    height: 2em;
+    width: 2em;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    background-color: #323E4D;
+    padding: 5vw 0vw;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    color: #C1D4EB;
+    padding-bottom: 0vw;
+}
+
+.footerInfoBtn {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    border: 1px solid #C1D4EB;
+    height: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 3em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footerInfoBtn:hover {
+    background-color: #3b495a;
+    color: #FFFFFF;
+}
+
+.footerInfoBtn a {
+    text-decoration: none;
+    color: #C1D4EB;
+    font-size: 1.6em;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 5vw;
+    gap: 3em;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+.footerInfo:nth-child(3) img{
+    align-self: baseline;
+}
+
+.footerInfo img {
+    width: 2.2em;
+    height: 2.2em;
+}
+
+.footerInfo a {
+    font-size: 1.6em;
+    color: #C1D4EB;
+    text-decoration: none;
+}
+
+.footerInfo a:hover {
+    color: #FFFFFF;
+}
+
+hr {
+    width: 90vw;
+    border: 1px solid #C1D4EB;
+    margin-bottom: 2em;
+}
+
+.company {
+    width: auto;
+    background-color: #1E2D40;
+    padding: 5vw 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.company img {
+    height: 2em;
+    display: inline-block;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 5em;
+        color: #323E4D;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 2.8em;
+    
+        margin: 0;
+    }
+    
+    h3 {
+        font-size: 2.2em;
+        color: #323E4D;
+        margin: 0;
+        overflow-wrap: break-word;
+    }
+    
+    p {
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        padding: 0% 5vw;
+        position: relative;
+    }
+    
+    .background {
+        position: absolute;
+        top: 0%;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        filter: brightness(45%);
+    }
+
+    .smartIntercom {
+        width: 150px;
+        display: block;
+        position: relative;
+        z-index: 3;
+        top: 10%;
+        transform: translateY(-0%);
+        left: 0%;
+        transform: translateX(-0%);
+    }
+    
+    .textHero {
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 3em;
+        position: relative;
+        z-index: 3;
+        margin-bottom: 4em;
+    }
+
+    .textHero h1, h3{
+        color: #FFFFFF;
+    }
+    
+    .arrow {
+        display: none;
+    }
+
+    .arrowPC {
+        display: block;
+        height: 5em;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .mainForm {
+        position: relative;
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .aboutPC {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        background: linear-gradient(128.31deg, #1169D1 0%, #0B3363 100%);
+        position: relative;
+        justify-self: flex-start;
+        align-self: flex-start;
+        height: 100vh;
+    }
+
+    .aboutImg {
+        width: 100%;
+        height: auto;
+    }
+    
+    .formPersonalData {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        margin: auto auto;
+        align-items: center;
+        padding: 1.6rem;
+        width: 40vw;
+    }
+    
+    .formDivider {
+        width: 100vw;
+    }
+    
+    .form {
+        margin: 1.6rem;
+        padding: 1.6rem;
+        width: 26.5vw;
+    }
+    
+    .formSubmit {
+        width: 26.5vw;
+        padding: 1.6rem;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        margin-top: 1.6rem;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .formSubmit label {
+        font-size: 1.6em;
+        text-align: left;
+        color: #000000;
+        margin-left: 1em;
+        width: 100%;
+    }
+    
+    .submitButton {
+        width: 100%;
+    }
+    
+    .legalDataForm {
+        grid-area: b;
+        display: inline-block; 
+        height: 2em;
+        width: 2em;
+        border-radius: 8px;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .dataLabel {
+        grid-area: c;
+    }
+    
+    .callLabel {
+        grid-area: f;
+    }
+    
+    .legalCallForm {
+        grid-area: d;
+        display: inline-block; 
+        height: 2em;
+        width: 2em;
+        border-radius: 8px;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    footer {
+        padding: 1.6rem 0vw;
+        margin-top: 1em;
+        padding-bottom: 0vw;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footerInfoBtn {
+        width: 40vw;
+        left: 0%;
+        transform: translateX(-0%);
+        margin: 1.6rem;
+    }
+    
+    .footerInfoBtn:hover {
+        background-color: #3b495a;
+        color: #FFFFFF;
+    }
+    
+    .footerInfoBtn a {
+        text-decoration: none;
+        color: #C1D4EB;
+        font-size: 1.6em;
+    }
+
+    .footerInfo {
+        width: 20%;
+    }
+
+    .footerInfo:nth-child(3) img{
+        align-self: baseline;
+    }
+
+    .footerInfo img {
+        width: 2.2em;
+        height: 2.2em;
+    }
+
+    .footerInfo a {
+        font-size: 1.6em;
+        color: #C1D4EB;
+    }
+
+    hr {
+        width: 90vw;
+        border: 1px solid #C1D4EB;
+        margin-bottom: 2em;
+    }
+
+    .company {
+        padding: 2%;
+    }
+
+    .tiandyLogo, .akuvoxLogo {
+        height: 1vh;
+    }
+
+}
