@@ -413,6 +413,24 @@ hr {
     object-fit: contain;
 }
 
+.message {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 40vh;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.message {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
 
     h1 {
