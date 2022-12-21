@@ -29,7 +29,7 @@
                         <p>Шановні мешканці, раді повідомити, що наша команда встановила у вашому будинку розумну систему домофонії Akuvox з підтримкою дзвінків на мобільний додаток, розпізнаванням обличя, Bluetooth та багато іншого. Для отримання якісних послуг просимо Вас заповнити дану форму.</p>
                     </div>
             </article>
-        </main>
+        
 
             <article class="aboutPC">
                 <img class="aboutImg" src="\assets\IMG.png" alt="arrow">
@@ -38,178 +38,138 @@
                         <p>Шановні мешканці, раді повідомити, що наша команда встановила у вашому будинку розумну систему домофонії Akuvox з підтримкою дзвінків на мобільний додаток, розпізнаванням обличя, Bluetooth та багато іншого. Для отримання якісних послуг просимо Вас заповнити дану форму.</p>
                     </div>
             </article>
-                <form action="" class="personalData">
+                
+            <form action="" class="mainForm">
+                <div class="formPersonalData">
                     <h2>Заповніть анкету</h2>
                     <input type="text" class="inputForm" id="fName" name="fName" placeholder="Ім’я" required="required" data-error="Поле обов'язкове для заповнення">
                     <input type="text" class="inputForm" id="lName" name="lName" placeholder="Прізвище" required="required" data-error="Поле обов'язкове для заповнення">
                     <input type="text" class="inputForm" id="fNum" name="flatNumber" placeholder="Номер квартири" required="required" data-error="Поле обов'язкове для заповнення">
                     <input type="email" class="inputForm" id="emailForm" name="emailForm" placeholder="Email" required="required" data-error="Поле обов'язкове для заповнення">
-                    <input type="tel" class="inputForm" id="pNum" name="phoneNumber" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="required" data-error="Поле обов'язкове для заповнення">
+                    <input type="tel" class="inputForm" id="pNum" name="phoneNumber" placeholder="Телефон" required="required" data-error="Поле обов'язкове для заповнення">
                     <input type="text" class="inputForm" id="kNum" name="keyNumber" placeholder="Скільки потрібно ключів?" required="required" data-error="Поле обов'язкове для заповнення">
-                </form>
-            
-            <section class="interview">
-                <div class="interviewwrap">
+                </div>
+                
+                <div class="formDivider">
                     <img class="interviewImg" src="\assets\BG_2.png" alt="">
                     <h2 class="interviewText">Спосіб отримання дзвінків та відкривання дверей</h2>
-                        <div class="test">
-                        <div class="form1">
-                            <form class="formBox">
-                                <p>Бажаєте отримати квартирний домофон?</p>
-                                <img class="formBoxImg" src="\assets\BG_3.png" alt="">
-                                <div class="formBorder">
-                                </div>
-                                    <input type="radio" class="choiceFormYes" id="yIntercom" name="formBoxCheck" required="required" value="Так">
-                                    <label class="yesForm" for="qIntercom">Так</label><br>
-                                <div class="formBorderNo">
-                                </div>
-                                    <input type="radio" class="choiceFormNo" id="nIntercom" name="formBoxCheck" required="required" value="Ні">
-                                    <label class="noForm" for="nIntercom">Ні</label><br>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="form2">
-                            <form class="formBox">
-                                <p>Бажаєте отримати додаток SmartPlus? <br>4 мешканця квартири входять в вартість підключення? </p>
-                                <img class="formBoxImg" src="\assets\ico_app 1.png" alt="">
-                                <div class="formBorder">
-                                </div>
-                                    <input type="radio" class="choiceFormYes" id="ySmartPlus" name="formBoxCheck" required="required" value="Так">
-                                    <label class="yesForm" for="qIntercom">Так</label><br>
-                                <div class="formBorderNo">
-                                </div>
-                                    <input type="radio" class="choiceFormNo" id="nSmartPlus" name="formBoxCheck" required="required" value="Ні">
-                                    <label class="noForm" for="nIntercom">Ні</label><br>
-                            </form>
-                        </div>
-
-                        <div class="form3">
-                            <form class="formBox">
-                                <p>Індивідуальна панель виклику, біля вхідних дверей</p>
-                                <img class="formBoxImg" src="\assets\01 1.png" alt="">
-                                <div class="formBorder">
-                                </div>
-                                    <input type="radio" class="choiceFormYes" id="yIntercom" name="formBoxCheck" required="required" value="Так">
-                                    <label class="yesForm" for="qIntercom">Так</label><br>
-                                <div class="formBorderNo">
-                                </div>
-                                    <input type="radio" class="choiceFormNo" id="nIntercom" name="formBoxCheck" required="required" value="Ні">
-                                    <label class="noForm" for="nIntercom">Ні</label><br>
-                            </form>
-                        </div>
-
-                        <div class="form4">
-                            <form class="formBox">
-                                <p>Відкриття ваших дверей з мобільного додатку</p>
-                                <img class="formBoxImg" src="\assets\ico-2 1.png" alt="">
-                                <div class="formBorder">
-                                </div>
-                                    <input type="radio" class="choiceFormYes" id="yIntercom" name="formBoxCheck" required="required" value="Так">
-                                    <label class="yesForm" for="qIntercom">Так</label><br>
-                                <div class="formBorderNo">
-                                </div>
-                                    <input type="radio" class="choiceFormNo" id="nIntercom" name="formBoxCheck" required="required" value="Ні">
-                                    <label class="noForm" for="nIntercom">Ні</label><br>
-                            </form>
-                        </div>
-
-                        <div class="form5">
-                            <form class="formBox">
-                                <p>Встановити Wi-Fi для стабільного й швидкого інтернет з'єднання?</p>
-                                <img class="formBoxImg" src="\assets\02 1.png" alt="">
-                                <div class="formBorder">
-                                </div>
-                                    <input type="radio" class="choiceFormYes" id="yIntercom" name="formBoxCheck" required="required" value="Так">
-                                    <label class="yesForm" for="qIntercom">Так</label><br>
-                                <div class="formBorderNo">
-                                </div>
-                                    <input type="radio" class="choiceFormNo" id="nIntercom" name="formBoxCheck" required="required" value="Ні">
-                                    <label class="noForm" for="nIntercom">Ні</label><br>
-                            </form>
-                        </div>
-
-                        <div class="form6">
-                            <form class="formBox">
-                                <p>Встановити систему відеоспостереження, щоб віддалено контролювати квартиру?</p>
-                                <img class="formBoxImg" src="\assets\02 2.png" alt="">
-                                <div class="formBorder">
-                                </div>
-                                    <input type="radio" class="choiceFormYes" id="yIntercom" name="formBoxCheck" required="required" value="Так">
-                                    <label class="yesForm" for="qIntercom">Так</label><br>
-                                <div class="formBorderNo">
-                                </div>
-                                    <input type="radio" class="choiceFormNo" id="nIntercom" name="formBoxCheck" required="required" value="Ні">
-                                    <label class="noForm" for="nIntercom">Ні</label><br>
-                            </form>
-                        </div>
-
-                        <div class="form7">
-                            <form class="formBox">
-                                <p>Встановити охоронну систему, для запобігання незаконним проникненням?</p>
-                                <img class="formBoxImg" src="\assets\88 1.png" alt="">
-                                <div class="formBorder">
-                                </div>
-                                    <input type="radio" class="choiceFormYes" id="yIntercom" name="formBoxCheck" required="required" value="Так">
-                                    <label class="yesForm" for="qIntercom">Так</label><br>
-                                <div class="formBorderNo">
-                                </div>
-                                    <input type="radio" class="choiceFormNo" id="nIntercom" name="formBoxCheck" required="required" value="Ні">
-                                    <label class="noForm" for="nIntercom">Ні</label><br>
-                            </form>
-                        </div>
-                        
-
-                        <div class="form8">
-                            <form class="submitForm">
-                                <input class="submitButton" type="submit" value="Надіслати відповіді" id="submit">
-                                    <input type="checkbox" class="legalDataForm" id="legalPersonalData" name="legal" required="required" value="Так">
-                                    <label class="dataLabel" for="legalPersonalData">Даю згоду на обробку персональних даних</label><br>
-                                    <input type="checkbox" class="legalCallForm" id="legalNightCall" name="nightCall" value="Так">
-                                    <label class="callLabel" for="legalNightCall">Зворотній зв’язок у не робочий час</label><br>
-                            </form>
-                        </div>
-                    </div>
                 </div>
-            </section>   
+
+                    <div class="form">
+                        <p>Бажаєте отримати квартирний домофон?</p>
+                        <img class="formBoxImg" src="\assets\BG_3.png" alt="">
+                            <input type="radio" class="choiceFormYes" id="yIntercom" name="formIntercomCheck" required="required" value="Так">
+                            <label class="yesForm" for="qIntercom">Так</label><br>
+                            <input type="radio" class="choiceFormNo" id="nIntercom" name="formIntercomCheck" required="required" value="Ні">
+                            <label class="noForm" for="nIntercom">Ні</label><br>
+                            <div class="formBorderYes"></div>
+                            <div class="formBorderNo"></div>
+                    </div>
+
+                    <div class="form">
+                        <p>Бажаєте отримати додаток SmartPlus? <br>4 мешканця квартири входять в вартість підключення? </p>
+                        <img class="formBoxImg" src="\assets\ico_app 1.png" alt="">
+                            <input type="radio" class="choiceFormYes" id="ySmartPlus" name="formSmartPlusCheck" required="required" value="Так">
+                            <label class="yesForm" for="qIntercom">Так</label><br>
+                            <input type="radio" class="choiceFormNo" id="nSmartPlus" name="formSmartPlusCheck" required="required" value="Ні">
+                            <label class="noForm" for="nIntercom">Ні</label><br>
+                            <div class="formBorderYes"></div>
+                            <div class="formBorderNo"></div>
+                    </div>
+
+                    <div class="form">
+                        <p>Індивідуальна панель виклику, біля вхідних дверей</p>
+                        <img class="formBoxImg" src="\assets\01 1.png" alt="">
+                        <input type="radio" class="choiceFormYes" id="yIntercom" name="formCallPanelCheck" required="required" value="Так">
+                        <label class="yesForm" for="qIntercom">Так</label><br>
+                        <input type="radio" class="choiceFormNo" id="nIntercom" name="formCallPanelCheck" required="required" value="Ні">
+                        <label class="noForm" for="nIntercom">Ні</label><br>
+                        <div class="formBorderYes"></div>
+                        <div class="formBorderNo"></div>
+                    </div>
+
+                    <div class="form">
+                        <p>Відкриття ваших дверей з мобільного додатку</p>
+                        <img class="formBoxImg" src="\assets\ico-2 1.png" alt="">
+                        <input type="radio" class="choiceFormYes" id="yIntercom" name="formMobileOpenCheck" required="required" value="Так">
+                        <label class="yesForm" for="qIntercom">Так</label><br>
+                        <input type="radio" class="choiceFormNo" id="nIntercom" name="formMobileOpenCheck" required="required" value="Ні">
+                        <label class="noForm" for="nIntercom">Ні</label><br>
+                        <div class="formBorderYes"></div>
+                        <div class="formBorderNo"></div>
+                    </div>
+
+                    <div class="form">
+                        <p>Встановити Wi-Fi для стабільного й швидкого інтернет з'єднання?</p>
+                        <img class="formBoxImg" src="\assets\02 1.png" alt="">
+                        <input type="radio" class="choiceFormYes" id="yIntercom" name="formWiFiCheck" required="required" value="Так">
+                        <label class="yesForm" for="qIntercom">Так</label><br>
+                        <input type="radio" class="choiceFormNo" id="nIntercom" name="formWiFiCheck" required="required" value="Ні">
+                        <label class="noForm" for="nIntercom">Ні</label><br>
+                        <div class="formBorderYes"></div>
+                        <div class="formBorderNo"></div>
+                    </div>
+
+                    <div class="form">
+                        <p>Встановити систему відеоспостереження, щоб віддалено контролювати квартиру?</p>
+                        <img class="formBoxImg" src="\assets\02 2.png" alt="">
+                        <input type="radio" class="choiceFormYes" id="yIntercom" name="formCameraCheck" required="required" value="Так">
+                        <label class="yesForm" for="qIntercom">Так</label><br>
+                        <input type="radio" class="choiceFormNo" id="nIntercom" name="formCameraCheck" required="required" value="Ні">
+                        <label class="noForm" for="nIntercom">Ні</label><br>
+                        <div class="formBorderYes"></div>
+                        <div class="formBorderNo"></div>
+                    </div>
+
+                    <div class="form">
+                        <p>Встановити охоронну систему, для запобігання незаконним проникненням?</p>
+                        <img class="formBoxImg" src="\assets\88 1.png" alt="">
+                        <input type="radio" class="choiceFormYes" id="yIntercom" name="formSecurityCheck" required="required" value="Так">
+                        <label class="yesForm" for="qIntercom">Так</label><br>
+                        <input type="radio" class="choiceFormNo" id="nIntercom" name="formSecurityCheck" required="required" value="Ні">
+                        <label class="noForm" for="nIntercom">Ні</label><br>
+                        <div class="formBorderYes"></div>
+                        <div class="formBorderNo"></div>
+                    </div>
+
+                <div class="formSubmit">
+                    <input class="submitButton" type="submit" value="Надіслати відповіді" id="submit">
+                    <input type="checkbox" class="legalDataForm" id="legalPersonalData" name="legal" required="required" value="Так">
+                    <label class="dataLabel" for="legalPersonalData">Даю згоду на обробку персональних даних</label><br>
+                    <input type="checkbox" class="legalCallForm" id="legalNightCall" name="nightCall" value="Так">
+                    <label class="callLabel" for="legalNightCall">Зворотній зв’язок у не робочий час</label><br>
+                </div>
+           
+            </form>
+        </main>
 
         <footer>
             <div class="contact">
+                <div class="footerInfoBtn">
+                    <a href="https://docs.google.com/spreadsheets/d/1zjtMmGDxoYjMSgjy1XsAn-TU7NWdAjy3/edit?usp=sharing&ouid=106066058689473828077&rtpof=true&sd=true" target="_blank">Каталог обладнання</a>
+                </div>
+                <div class="footerInfoBtn">
+                    <a href="https://drive.google.com/file/d/15hkDr1r8PZVpuZs6Q__ZTZONU4DPzkzr/view?usp=sharing" target="_blank">Інструкція SmartPlus</a>
+                </div>
+                <hr />
                 <div class="footerInfo">
                     <img class="phoneIcon" src="\assets\Vector(1).svg" alt="">
                     <a href="tel:+380503318533">+38 050 331 85 33</a>
                 </div>
-
                 <div class="footerInfo">
                     <img class="emailIcon" src="\assets\Group 1.svg" alt="">
                     <a href = "mailto:odeskyikvartal1@gmail.com">odeskyikvartal1@gmail.com</a>
                 </div>
-
                 <div class="footerInfo">
                     <img class="clockIcon" src="\assets\Group 2.svg" alt="">
                     <p>Пн - Пт з 9:00 до 20:00<br>Сб. - Нд. з 10:00 до 18:00</p>
                 </div>
-
-                <hr />
-    
-                <div class="footerInfo">
-                    <img class="goIcon" src="\assets\Group 3.svg" alt="">
-                    <p>Каталог обладнання</p>
-                </div>
-
-                <div class="footerInfo">
-                    <img class="goIcon" src="\assets\Group 3.svg" alt="">
-                    <p>Інструкція SmartPlus</p>
-                </div>
             </div>
-            
             <div class="company">
-                <img class="tiandyLogo" src="\assets\Group.svg" alt="">
-                <img class="akuvoxLogo" src="\assets\Vector.svg" alt="">
+                <a href="https://tiandy.com.ua/" target="_blank"><img class="tiandyLogo" src="\assets\Group.svg" alt=""></a>
+                <a href="https://tiandy.com.ua/" target="_blank"><img class="akuvoxLogo" src="\assets\Vector.svg" alt=""></a>
             </div>
-
         </footer>
-          
     </div>
 </body>
 </html>
