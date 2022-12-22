@@ -416,55 +416,7 @@ hr {
     object-fit: contain;
 }
 
-#messageWrap {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0%;
-    left: 0%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0,0,0,0.5);
-    z-index: 20;
-}
 
-.message {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    gap: 1.6rem;
-    width: 80vw;
-    max-width: 350px;
-    height: auto;
-    border-radius: 8px;
-    color: #000000;
-    margin: 1.6rem;
-    padding: 1.6rem;
-    background-color: #FFFFFF;
-}
-
-.message img {
-    border-radius: 100%;
-    width: 80%;
-    object-fit: cover;
-}
-
-.message button {
-    font-size: 1.8em;
-    height: 4rem;
-    background-color: #105FBB;
-    border-radius: 8px;
-    color: #FFFFFF;
-    border-style: none;
-    margin-bottom: 1em;
-    width: 100%;
-}
-
-.message span{
-    font-size: 1.6rem;
-}
 
 @media screen and (min-width: 768px) {
 
@@ -723,10 +675,7 @@ hr {
         height: 1vh;
     }
     
-    .message {
-        width: 40vw;
-        max-width: 450px;
-    }
+    
 }
 
 @media screen and (min-width: 1498px) {
