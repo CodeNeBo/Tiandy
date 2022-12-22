@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #C1D4EB;
+
+    font-size: 10px;
+    line-height: 1.6;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3em;
+    color: #323E4D;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.4em;
+
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #323E4D;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+p {
+    font-size: 1.6em;
+    margin: 0;
+}      
+
+#messageWrap {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 20;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    gap: 1.6rem;
+    width: 80vw;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    color: #000000;
+    margin: 1.6rem;
+    padding: 1.6rem;
+    background-color: #FFFFFF;
+}
+
+.message img {
+    border-radius: 100%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.message button {
+    font-size: 1.8em;
+    height: 4rem;
+    background-color: #105FBB;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border-style: none;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.message span{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 5em;
+        color: #323E4D;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 2.8em;
+    
+        margin: 0;
+    }
+    
+    h3 {
+        font-size: 2.2em;
+        color: #323E4D;
+        margin: 0;
+        overflow-wrap: break-word;
+    }
+    
+    p {
+        font-size: 1.8em;
+        margin: 0;
+    }
+
+    .message {
+        width: 40vw;
+        max-width: 450px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="message.css">
+</head>
+<body>
+    <div class="messageWrap" id="messageWrap">
+        <div class="message">
+            <img src="\assets\Yuriy.jpg" alt="">
+            <p><span>Форма успішно відправлена!</span><br>Ваш персональный експерт Юрій Ткач зв’яжеться із вами найближчим часом</p>
+            <button name="Close" value="Close Div" onclick="closeDiv()">Назад</button>
+        </div>
+    </div>
+
+    <script>
+    function openDiv() {
+        document.getElementById("messageWrap").style.display = "flex";
+    };
+
+    function closeDiv() {
+        document.getElementById("messageWrap").style.display = "none";
+    };
+    </script>
+</body>
+</html>
