@@ -189,11 +189,10 @@ main {
 
 .form {
     display: grid;
-    /* width: 100%; */
     grid-template-areas: 
             "a a a"
-            "b c d"
-            "b f g";
+            "b c c"
+            "b f f";
     grid-template-columns: 60% 20% 20%;
     grid-template-rows: 4rem 6rem 6rem;
     text-align: center;
@@ -207,7 +206,18 @@ main {
 }
 
 .form label{
+    width: 100%;
     font-size: 2em;
+    text-align: left;
+    position: relative;
+    padding-left: 3.2rem;
+}
+
+.form label input {
+    position: absolute;
+    right: 3.2rem;
+    top: 20%;
+    scale: 150%;
 }
 
 .form p {
@@ -716,5 +726,18 @@ hr {
     .message {
         width: 40vw;
         max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 1498px) {
+    .formSubmit {
+        width: calc(26.5vw + 26.5vw + 6.4rem);
+        padding: 1.6rem;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        margin-top: 1.6rem;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: auto auto auto;
     }
 }
