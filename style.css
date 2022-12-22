@@ -413,13 +413,13 @@ hr {
     object-fit: contain;
 }
 
-.messageWrap {
+#messageWrap {
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0%;
     left: 0%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background: rgba(0,0,0,0.5);
@@ -462,10 +462,6 @@ hr {
 .message span{
     font-size: 1.6rem;
 }
-
-/* .message {
-    display: none;
-} */
 
 @media screen and (min-width: 768px) {
 
