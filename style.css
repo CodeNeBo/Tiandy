@@ -35,9 +35,6 @@ p {
 }       
 
 
-    
-
-
 .container {
     margin: 0px;
     padding: 0px;
@@ -72,9 +69,8 @@ main {
 }
 
 .smartIntercom {
-    width: 100vw;
     position: absolute;
-    width: 150px;
+    width: 30vw;
     top: 41%;
     transform: translateY(-41%);
     left: 50%;
@@ -165,7 +161,7 @@ main {
     height: 4em;
     border-radius: 4px;
     border-style: solid;
-    font-size: 2em;
+    font-size: 1.8em;
     padding-left: 1em
 }
 
@@ -416,7 +412,89 @@ hr {
     object-fit: contain;
 }
 
+@media screen and (max-width: 319px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.8em;
+    }
+    
+    p {
+        font-size: 1.4em;
+    }      
 
+    .inputForm {
+        font-size: 1.6em;
+    }
+
+    .form {
+        display: grid;
+        grid-template-areas: 
+            "a a"
+            "b b"
+            "c d"
+            "f e";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 6rem 10rem  5rem 5rem;
+    }
+
+    .form label{
+        font-size: 2em;
+    }
+    
+    .form label input {
+        position: absolute;
+        right: -3.5rem;
+    }
+    
+    .formBoxImg {
+        height: 8rem;
+        justify-self: center;
+    }
+    
+    .formBorderYes {
+        width: auto;
+        display: block;
+        height: 80%;
+        width: 100%;
+        border: 1px solid #C1D4EB;
+        border-radius: 8px;
+        grid-row-start: c;
+        grid-column-start: c;
+        grid-row-end: c;
+        grid-column-end: d; 
+    }
+    
+    .formBorderNo {
+        width: auto;
+        display: block;
+        height: 80%;
+        width: 100%;
+        border: 1px solid #C1D4EB;
+        border-radius: 8px;
+        grid-row-start: f;
+        grid-column-start: f;
+        grid-row-end: f;
+        grid-column-end: g; 
+    }
+    
+    .formSubmit {
+        gap: 1rem;
+    }
+    .submitButton {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 320px) {
+
+}
 
 @media screen and (min-width: 768px) {
 
@@ -676,6 +754,14 @@ hr {
     }
     
     
+}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
 }
 
 @media screen and (min-width: 1498px) {
