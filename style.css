@@ -304,6 +304,12 @@ main {
     margin-bottom: 1em;
 }
 
+.personalLink {
+    cursor: pointer;
+    color:  #105FBB;
+    text-decoration: underline;
+}
+
 .legalDataForm {
     grid-area: b;
     display: inline-block; 
