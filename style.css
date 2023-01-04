@@ -804,4 +804,8 @@ hr {
         align-items: center;
         grid-template-rows: auto auto auto;
     }
+
+    .company {
+        padding: 1.2rem;
+    }
 }
