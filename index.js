@@ -46,3 +46,18 @@ const formatToPhone = (event) => {
 const inputElement = document.getElementById("pNum");
 inputElement.addEventListener('keydown',enforceFormat);
 inputElement.addEventListener('keyup',formatToPhone);
+const emailInput = document.getElementById("emailForm");
+
+function valField() {
+    const inputs = Array.from(document.querySelectorAll('input[name=emailForm], input[name=phoneNumber]'));
+
+    const inputListener = e => {
+    inputs
+      .filter(i => i !== e.target)
+      .forEach(i => (i.required = !e.target.value.length));
+    };
+    inputs.forEach(i => i.addEventListener('input', inputListener));
+}
+
+inputElement.addEventListener('focusout', valField());
+emailInput.addEventListener('focusout', valField());
